@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #efefef;
+}
+
+/* nav(left) 画面 */
+nav{
+  background: tomato;
+  width: 300px;
+  order: -1; 
+  margin-left: 5px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+/* main (center) */
+main{
+  width: 800px;
+  margin-left: auto;      /*センタリング*/
+  margin-right: auto;     /*センタリング*/
+  flex: 1;
+}
+
+/* aside(right) 画面 */
+aside{
+  background: orange;
+  flex: 1;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+/* 全体 */
+header{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  background:url(../img/911GT1/911GT1_14.jpg);   /* 表題の写真 */
+  border: 2px solid white;          /* 画像の枠の太さ */
+  text-align: center;
+  border-radius: 8px;
+  padding-bottom: 100px;               /* ここを増やすと画像の高さが変わる */
+  background-size: cover;
+  background-position: center;
+}
+
+/* 全体 */
+.message{
+  width: 300px;
+  padding: 8px 16px;
+  background: #2c2c2c;
+  color: #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  position: fixed;
+  right: 32px;
+  top: 32px;
+  animation: popup 3S forwards;
+}
+
+/* main(center) hellow 表示 */
+@keyframes popup {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  20%, 80% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* 全体 */
+.container {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+}
+
+/* リンク */
+a {
+  color: white;         /* aタグの色を指定 */
+  text-decoration: none;
+}
+
+/* 見出し(main) */
+.main_produce {
+  color: #fff;
+  line-height: 2.5;
+  background-color: green;
+  width: 385px;
+  height: 40px;
+  box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* スライドショー(main) */
+.main_slide {
+	position:relative;
+	height:500px;
+  width: 800px;
+  background-color: black;
+  z-index: 2;
+  border-radius: 5px;
+}
+
+/* スライドショー(main) */
+.main_slide img {
+  box-sizing: border-box;
+  background-color: black;
+  border: 5px solid black;
+  border-radius: 5px;
+
+	position:absolute;
+	opacity:0;
+	transition:all 3s ease-in-out;
+	height:500px;
+  width: 800px;
+  object-fit:contain;
+  z-index: 1;
+}
+
+/* 見出し(main) */
+.main_rireki {
+  line-height: 2.5;
+  background-color: blueviolet;
+  width: 385px;
+  height: 40px;
+  box-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
+  text-shadow: 10px 5px 3px rgba(0, 0, 0, 0.3);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+}
+
+/* モデル(main) */
+span{
+  display: flex;
+}
+
+/* モデル(main) */
+.box {
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 0);
+  height: 120px;
+  width: 200px;
+  margin-right: 15px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box:hover{
+  opacity: 0.8;
+}
+
+footer p{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* ******************************* */
+/*            カレンダー           */
+/* ******************************* */
+table {
+  border-collapse: collapse;
+  border: 2px solid #eee;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  margin:10px;
+  background-color: pink;
+}
+
+thead,
+tfoot {
+  background: #eee;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+tbody td:first-child {
+  color: red;
+}
+
+tfoot {
+  font-weight: bold;
+}
+
+td.disabled {
+  opacity: 0.3;
+}
+
+td.today {
+  font-weight: bold;
+  background-color: olivedrab;
+}
+
+td.holiday {
+  color: red;
+}
+
+td.saturday {
+  color: blue;
+} */
+
+#prev,
+#next,
+#today {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* ******************************* */
+/*             作品履歴            */
+/* ******************************* */
+/* 作品履歴(main) */
+.no11{
+  background: center/cover url(../img/Mazda787b/mazda787b_00.jpg);
+}
+.no12{
+  background: center/cover url(../img/911GT1/911GT1_08.jpg);
+}
+.no13{
+  background: center/cover url(../img/blue.png);
+}
+.no14{
+  background: center/cover url(../img/skyblue.png);
+}
+.no21{
+  background: center/cover url(../img/lightblue.png);
+}
+.no22{
+  background: center/cover url(../img/green.png);
+}
+.no23{
+  background: center/cover url(../img/lemon.png);
+}
+.no24{
+  background: center/cover url(../img/mikan.png);
+}
+.no31{
+  background: center/cover url(../img/orange.png);
+}
+.no32{
+  background: center/cover url(../img/red.png);
+}
+/* .no33{
+  background: center/cover url(../img/pic20.jpg);
+}
+.no34{
+  background: center/cover url(../img/pic21.jpg);
+} */
