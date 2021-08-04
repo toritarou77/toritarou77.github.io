@@ -14,12 +14,14 @@ body{
 
 /* nav(left) 画面 */
 nav{
-  background: tomato;
+  background: rgb(241, 168, 155);
   width: 300px;
   order: -1; 
   margin-left: 5px;
   margin-right: 10px;
   border-radius: 4px;
+  /* font-family: 'Courier', monospace; */
+  font-size: 14px;
 }
 
 /* main (center) */
@@ -32,10 +34,11 @@ main{
 
 /* aside(right) 画面 */
 aside{
-  background: orange;
+  background: rgb(236, 198, 127);
   flex: 1;
   margin-left: 10px;
   border-radius: 4px;
+  font-size: 14px;
 }
 
 /* 全体 */
