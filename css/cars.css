@@ -13,6 +13,16 @@ body{
 
 img{
   border-radius: 1%;
+  /* 2021.09.10 add 3line */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.3s, transform 1.3s;
+}
+
+/* 2021.09.10 add 4line */
+img.appear {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .works{
